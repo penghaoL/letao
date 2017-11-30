@@ -1,0 +1,68 @@
+/*·ÖÀà*/
+.category{
+    width: 100%;
+    padding: 10px;
+    border-bottom:1px solid #ccc;
+}
+.category ul{
+    width: 100%;
+    overflow: hidden;
+}
+.category ul li{
+    width: 33.3%;
+    float: left;
+}
+.category ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.category ul li a img{
+    width: 100%;
+    display: block;
+}
+/*ËÑË÷*/
+.lt_top{
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: center;
+    color:#fff;
+    line-height: 45px;
+    font-size:18px;
+    z-index:10000;
+    position: relative;
+}
+.lt_top .icon_search{
+    color:#fff;
+    position: absolute;
+    right:10px;
+    top:13px;
+}
+
+.lt_active{
+    width: 100%;
+    padding: 10px;
+    padding-top:0;
+    overflow: hidden;
+}
+.lt_active a{
+    float: left;
+    display: block;
+    width: 67%;
+}
+.lt_active a img{
+    display: block;
+    width: 50%;
+    float: left;
+}
+.lt_active a:nth-child(2){
+    float: right;
+    width: 33%;
+}
+.lt_active a:nth-child(2) img{
+    width: 100%;
+}

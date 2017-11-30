@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="res/mui/css/mui.css"/>
-    <link rel="stylesheet" href="css/category.css"/>
+
 </head>
 <body>
 <!--定义容器-->
@@ -20,22 +20,21 @@
     <!--顶部-->
     <div class="lt_top">
         <a href="javascript:history.back();" class="icon_back fa fa-arrow-left"></a>
+        <span>搜索中心</span>
+    </div>
+    <div class="search_center">
         <form action="javascript:;">
-            <input type="search"/>
+        <input type="search" placeholder="搜索你喜欢的商品"/>
+            <a href="javascript:;">搜索</a>
         </form>
-        <a href="search.html" class="icon_search fa fa-search"></a>
     </div>
-    <!--左侧-->
-    <div class="cate_left">
+    <div class="history_b">
+        <span>搜索记录</span>
+        <span class="fa fa-trash">清空记录</span>
         <ul>
-            <!--TODO-->
+            <li><a href="javascript:;">1</a><span  class="fa fa-close"  ></span></li>
+            <li><a href="javascript:;">1134</a><span  class="fa fa-close"  ></span></li>
         </ul>
-    </div>
-    <!--右侧-->
-    <div class="cate_right">
-            <ul>
-                <!--TODO-->
-            </ul>
     </div>
     <!--底部footer-->
     <div class="lt_footer">
@@ -45,26 +44,14 @@
         <a href="#"><span class="fa fa-user"></span><p>个人中心</p></a>
     </div>
 </div>
-
-<!--一级分类模板-->
-<script type="text/template" id="firstTemp">
-    <% for(var i=0;i<rows.length;i++){ %>
-    <li><a data-id="<%= rows[i].id %>" href="javascript:;" class="<%=i==0?'active':''; %>"><%=rows[i].categoryName%></a></li>
-    <% } %>
-</script>
-<!--二级分类模板-->
-<script type="text/template" id="secondTemp">
-    <%if(rows.length>0){%>
-    <% for(var i =0;i<rows.length;i++){ %>
-    <li><a href="javascript:"><img src="<%= rows[i].brandLogo %>" alt=""/><p><%=rows[i].brandName %></p></a></li>
-    <% } %>
-    <% }else{ %>
-        <li class="nd">该分类下没有数据</li>
-    <% } %>
+<script type="text/template" id="ltHistoryTemp">
+    <% for(var i=list.length-1;i>=0;i--){ %>
+    <li><a href="javascript:;"><%=list[i] %></a><span data-index="<%=i%>" class="fa fa-close"  ></span></li>
+    <% }%>
 </script>
 <script src="res/mui/js/mui.js"></script>
 <script src="res/artTemplate/template-native.js"></script>
 <script src="res/zepto/zepto.min.js"></script>
-<script src="js/category.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>

@@ -1,22 +1,70 @@
-.category{
-    width: 100%;
-    padding: 10px;
-    border-bottom:1px solid #ccc;
+body{
+    background-color: #c9c9c9;
 }
-.category ul{
-    width: 100%;
+.lt_top .icon_back {
+    position: absolute;left:10px;
+    top:13px;
+    color:#fff;
+}
+.lt_top form{
+    padding:0 40px;
+}
+.lt_top form input{
+    background-color: #fff;
+    height: 29px;
+    border-radius: 3px;
+    padding-left:10px;
+    color:#000;
+}
+.cate_left{
+    /*padding-top:45px;*/
+    float: left;
+}
+.cate_left ul{
+    width: 80px;
+    text-align: center;
+}
+.cate_left ul li a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    font-size:14px;
+    color:#000;
+    border-bottom:1px solid #c9c9c9;
+}
+.cate_left ul li a.active{
+    background-color: #c9c9c9;
+}
+.cate_right{
+    /*padding-top:45px;*/
+}
+.cate_right{
     overflow: hidden;
+    /*background-color: #fff;*/
+
 }
-.category ul li{
+.cate_right ul{
+    overflow: hidden;
+    margin-top:10px;
+    margin-left:10px;
+    background-color: #fff;
+}
+.cate_right ul li{
     width: 33.3%;
     float: left;
 }
-.category ul li a {
-    display: block;
+.cate_right ul li a{
     width: 100%;
-    height: 100%;
+    text-align: center;
 }
-.category ul li a img{
+.cate_right ul li a img{
     width: 100%;
-    display: block;
+}
+.nd{
+    width: 100%!important;
+    font-size:10px;
+    text-align: center;
+    padding-top:10px;
+    color:#aaa;
 }
