@@ -34,7 +34,7 @@
     line-height: 45px;
     font-size:18px;
     z-index:10000;
-    position: relative;
+    /*position: relative;*/
 }
 .lt_top .icon_search{
     color:#fff;
