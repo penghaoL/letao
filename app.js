@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
     if (!req.session.employee
         && ((url.indexOf('/admin') > -1 && url.indexOf('.html') > -1) || url == '/admin/' )
         && url.indexOf('/admin/login.html') == -1) {
-        return res.redirect('/admin/login.html');
+        return res.redirect('/admin37/login.html');
     }
     next();
 });

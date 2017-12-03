@@ -1,0 +1,113 @@
+.lt_cartf{
+    height: 45px;
+    background-color: #e6e6e6;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    left:0;
+    border-top:1px solid #ccc;
+    z-index:999;
+}
+.lt_cartf a{
+    line-height: 45px;
+    color:#aaa;
+    font-size:25px;
+    padding-left:20px;
+}
+.lt_cartf button{
+    margin-top:5px;
+    width: 120px;
+    float: right;
+    margin-right:10px;
+}
+.lt_protit {
+    padding:10px;
+    border-bottom:1px solid #ccc;
+}
+.lt_protit p{
+    color:#000;
+    font-size:16px;
+    text-align: left;
+}
+.lt_pro_price {
+    height: 50px;
+    line-height: 50px;
+    border-bottom:1px solid #ccc;
+}
+.lt_pro_price span:first-child{
+    padding-left:10px;
+    font-size:14px;
+}
+.lt_pro_price span:nth-child(2){
+    font-size:23px;
+    font-weight: bold;
+    color:#ea543d;
+}
+.lt_pro_price span:nth-child(3){
+    font-size:15px;
+    color:#ccc;
+    text-decoration:line-through;
+}
+.lt_prosize {
+    padding:15px 0;
+    padding-left:10px;
+    font-size:14px;
+    border-bottom:1px solid #ccc;
+}
+.lt_prosize span{
+    margin:0;
+    padding:0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    border:1px solid #ccc;
+    margin-left:3px;
+    margin-bottom: 3px;
+}
+.lt_prosize span.now{
+    background-color: rgb(234, 84, 61);
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:3px;
+}
+.lt_pronum {
+    padding:10px 0;
+    padding-left:10px;
+    font-size:14px;
+    line-height: 24px;
+}
+.lt_pronum .add,
+.lt_pronum .dda{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border:1px solid #ccc;
+    vertical-align:middle;
+    line-height: 23px;
+    text-align: center;
+    color:#ccc;
+}
+.lt_pronum input {
+    display: inline-block;
+    padding:0;
+    margin:0;
+    border-radius:0;
+    width: 23px;
+    height: 23px;
+    color:#000;
+    vertical-align:middle;
+    border-left:0;
+    border-right:0;
+    text-align: center;
+}
+.mui-pull-top-pocket{
+    overflow: hidden;
+    top:45px;
+    padding-top: 45px;
+}
+.lt_pro{
+    height: 100%;
+    padding-top: 45px;
+}
